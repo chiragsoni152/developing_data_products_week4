@@ -1,0 +1,71 @@
+---
+title: "Developing Data Products Week 4"
+output: slidy_presentation
+author: "Chirag Soni, 25 Feb 2018"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## About the slide
+
+This slide is put together for the project 4 of Developing Data products course. The main objective of this course is to be able to develop data science products that can be hosted on the web for others to see.
+
+
+Following slides will display the Shiny app created for this project alongwith other information about the project
+
+
+## Project details
+
+- Summary:
+
+The app created using Shiny app predicts Horsepower of a car from given value of Miles per Gallon.
+
+The dataset used for this project is mtcars, which is readily available in R library
+
+- Approach
+1. We will build two models that will predict the Horsepower of the car.
+2. First model will take MPG value of greater than 20.
+3. Other model will take all the values for MPG available in the dataset.
+4. We will fit a linear model on both the above MPG values and predict value of Horsepower
+5. Model will be trained on the values available in the mtcars dataset
+6. User will be alowed to choose a particular MPG value from the slider available and also if they wish to see any one model output from the above
+
+## Summary of the dataset mtcars
+
+```{r , echo = TRUE}
+summary(mtcars)
+```
+
+## Plot between Horsepower and MPG
+
+```{r}
+plot(mtcars$hp~mtcars$mpg)
+```
+
+
+## Below is the model output with MPG as 10
+```{r, echo=FALSE}
+knitr::include_graphics('C:\\Users\\csoni\\OneDrive - VMware, Inc\\Coursera\\Data Science John Hopkins\\Coure 9\\Week4\\image1.png')
+
+```
+
+
+## Below is the model output with MPG as 20
+```{r, echo=FALSE}
+knitr::include_graphics('C:\\Users\\csoni\\OneDrive - VMware, Inc\\Coursera\\Data Science John Hopkins\\Coure 9\\Week4\\image2.png')
+
+```
+
+
+## THANK YOU
+
+
+Here are the links for contents of the slide
+
+
+Shiny app:  https://chiragsoni152.shinyapps.io/Week_4_Project
+
+
+github:     https://github.com/chiragsoni152/developing_data_products_week4
